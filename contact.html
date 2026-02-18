@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Malda Identity Consulting</title>
+    <meta name="description" content="Contact Malda Identity Consulting." />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-white text-slate-900">
+    <header class="border-b border-slate-200">
+      <nav class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="font-semibold tracking-tight text-slate-900">
+          Malda<span class="text-slate-500">.ca</span>
+        </a>
+        <div class="flex gap-6 text-sm">
+          <a class="text-slate-700 hover:text-slate-900" href="about.html">About</a>
+          <a class="text-slate-700 hover:text-slate-900" href="services.html">Services</a>
+          <a class="text-slate-700 hover:text-slate-900" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 py-14">
+      <h1 class="text-3xl font-semibold tracking-tight">Contact</h1>
+      <p class="mt-4 max-w-3xl text-slate-700">
+        Tell me a bit about what you’re building and what you need reviewed. I’ll reply with next steps.
+      </p>
+
+      <div class="mt-10 grid gap-8 md:grid-cols-2">
+        <section class="rounded-xl border border-slate-200 p-6">
+          <h2 class="text-lg font-semibold">Send a message</h2>
+
+          <!-- Replace YOUR_FORMSPREE_ID -->
+          <form class="mt-6 space-y-4" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+            <div>
+              <label class="block text-sm font-medium text-slate-800" for="name">Name</label>
+              <input class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-300"
+                     id="name" name="name" type="text" required />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-slate-800" for="email">Email</label>
+              <input class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-300"
+                     id="email" name="email" type="email" required />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-slate-800" for="topic">Topic</label>
+              <select class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-300"
+                      id="topic" name="topic">
+                <option>Architecture Review</option>
+                <option>Security Assessment</option>
+                <option>Retainer Advisory</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-slate-800" for="message">Message</label>
+              <textarea class="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-300"
+                        id="message" name="message" rows="6" required
+                        placeholder="Context, constraints, timelines, and what you’d like reviewed..."></textarea>
+            </div>
+
+            <button class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:bg-slate-800"
+                    type="submit">
+              Send
+            </button>
+
+            <p class="text-xs text-slate-600">
+              (Optional) Add your privacy wording here, e.g. “Information is used only to respond to your inquiry.”
+            </p>
+          </form>
+        </section>
+
+        <aside class="rounded-xl border border-slate-200 p-6 bg-slate-50">
+          <h2 class="text-lg font-semibold">What helps me respond quickly</h2>
+          <ul class="mt-4 text-sm text-slate-700 list-disc pl-5 space-y-2">
+            <li>Your product/service and users</li>
+            <li>Identity stack (IdP/OP, OAuth2/OIDC, MFA)</li>
+            <li>Constraints (time, budget, compliance)</li>
+            <li>Where you feel risk or uncertainty</li>
+          </ul>
+
+          <div class="mt-8">
+            <h3 class="text-sm font-semibold text-slate-800">Email (optional)</h3>
+            <p class="mt-2 text-sm text-slate-700">
+              If you prefer email, add it here:
+              <br />
+              <span class="font-medium">you@malda.ca</span>
+            </p>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="border-t border-slate-200">
+      <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-600 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <p>© <span id="year"></span> Malda Identity Consulting Inc.</p>
+        <div class="flex gap-5">
+          <a class="hover:text-slate-900" href="index.html">Home</a>
+          <a class="hover:text-slate-900" href="services.html">Services</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
