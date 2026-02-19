@@ -15,30 +15,31 @@
     </style>
   </head>
 
-  <body class="bg-white text-slate-900">
+  <body class="bg-white text-[#111827]">
     <header class="border-b border-slate-200">
       <nav class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
         <a href="index.html" class="font-semibold tracking-tight text-[color:var(--brand-primary)]">
           Malda<span class="text-[color:var(--brand-accent)]">.ca</span>
         </a>
         <div class="flex gap-6 text-sm">
-          <a class="text-slate-700 hover:text-slate-900" href="about.html">About</a>
-          <a class="text-slate-700 hover:text-slate-900" href="services.html">Services</a>
-          <a class="text-slate-700 hover:text-slate-900" href="contact.html">Contact</a>
+          <a class="text-slate-700 hover:text-[color:var(--brand-accent)] transition-colors" href="about.html">About</a>
+          <a class="text-slate-700 hover:text-[color:var(--brand-accent)] transition-colors" href="services.html">Services</a>
+          <a class="text-slate-700 hover:text-[color:var(--brand-accent)] transition-colors" href="contact.html">Contact</a>
         </div>
       </nav>
     </header>
 
     <main class="mx-auto max-w-6xl px-4 py-14">
-      <h1 class="text-3xl font-semibold tracking-tight">Services</h1>
+      <h1 class="text-3xl font-semibold tracking-tight text-[color:var(--brand-primary)]">Services</h1>
+
       <p class="mt-4 max-w-3xl text-slate-700">
         Choose a quick review, a focused assessment, or ongoing advisory. Engagements are designed to be lightweight,
         high-leverage, and practical for engineering teams.
       </p>
 
       <div class="mt-10 grid gap-6 md:grid-cols-3">
-        <section class="rounded-xl border border-slate-200 p-6">
-          <h2 class="font-semibold">Architecture Review</h2>
+        <section class="rounded-xl border border-slate-200 p-6 hover:border-[color:var(--brand-accent)] transition-colors">
+          <h2 class="font-semibold text-[color:var(--brand-primary)]">Architecture Review</h2>
           <p class="mt-2 text-sm text-slate-700">
             Review your identity architecture and key flows, then deliver a prioritized set of recommendations.
           </p>
@@ -49,8 +50,8 @@
           </ul>
         </section>
 
-        <section class="rounded-xl border border-slate-200 p-6">
-          <h2 class="font-semibold">Security Assessment</h2>
+        <section class="rounded-xl border border-slate-200 p-6 hover:border-[color:var(--brand-accent)] transition-colors">
+          <h2 class="font-semibold text-[color:var(--brand-primary)]">Security Assessment</h2>
           <p class="mt-2 text-sm text-slate-700">
             Focused assessment of authentication, session, MFA, recovery, and authorization patterns.
           </p>
@@ -61,8 +62,8 @@
           </ul>
         </section>
 
-        <section class="rounded-xl border border-slate-200 p-6">
-          <h2 class="font-semibold">Retainer Advisory</h2>
+        <section class="rounded-xl border border-slate-200 p-6 hover:border-[color:var(--brand-accent)] transition-colors">
+          <h2 class="font-semibold text-[color:var(--brand-primary)]">Retainer Advisory</h2>
           <p class="mt-2 text-sm text-slate-700">
             Ongoing support to unblock decisions, review designs, and strengthen your IAM roadmap.
           </p>
@@ -74,21 +75,21 @@
         </section>
       </div>
 
-      <section class="mt-10 rounded-xl border border-slate-200 p-6">
-        <h2 class="text-lg font-semibold">Common topics</h2>
-        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-700">
-          <span class="rounded-full border border-slate-200 px-3 py-1">OIDC OP / RP patterns</span>
-          <span class="rounded-full border border-slate-200 px-3 py-1">Token lifetimes & rotation</span>
-          <span class="rounded-full border border-slate-200 px-3 py-1">AuthN vs AuthZ separation</span>
-          <span class="rounded-full border border-slate-200 px-3 py-1">Zero Trust access</span>
-          <span class="rounded-full border border-slate-200 px-3 py-1">MFA reset & recovery</span>
-          <span class="rounded-full border border-slate-200 px-3 py-1">Secure portal patterns</span>
+      <section class="mt-10 rounded-xl border border-slate-200 p-6 hover:border-[color:var(--brand-accent)] transition-colors">
+        <h2 class="text-lg font-semibold text-[color:var(--brand-primary)]">Common topics</h2>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs text-slate-600">
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-[color:var(--brand-primary)] hover:border-[color:var(--brand-accent)] transition-colors">OIDC OP / RP patterns</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-[color:var(--brand-primary)] hover:border-[color:var(--brand-accent)] transition-colors">Token lifetimes & rotation</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-[color:var(--brand-primary)] hover:border-[color:var(--brand-accent)] transition-colors">AuthN vs AuthZ separation</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-[color:var(--brand-primary)] hover:border-[color:var(--brand-accent)] transition-colors">Zero Trust access</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-[color:var(--brand-primary)] hover:border-[color:var(--brand-accent)] transition-colors">MFA reset & recovery</span>
+          <span class="rounded-full border border-slate-200 bg-white px-3 py-1 text-[color:var(--brand-primary)] hover:border-[color:var(--brand-accent)] transition-colors">Secure portal patterns</span>
         </div>
       </section>
 
       <div class="mt-10">
         <a href="contact.html"
-           class="inline-flex items-center justify-center rounded-lg bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:bg-slate-800">
+           class="inline-flex items-center justify-center rounded-lg bg-[color:var(--brand-primary)] px-5 py-3 text-sm font-medium text-white hover:bg-[color:var(--brand-accent)] transition-colors">
           Discuss an engagement
         </a>
       </div>
@@ -98,9 +99,9 @@
       <div class="mx-auto max-w-6xl px-4 py-10 text-sm text-slate-600 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
         <p>© <span id="year"></span> Malda Identity Consulting Inc.</p>
         <div class="flex gap-5">
-          <a class="hover:text-slate-900" href="index.html">Home</a>
-          <a class="hover:text-slate-900" href="about.html">About</a>
-          <a class="hover:text-slate-900" href="contact.html">Contact</a>
+          <a class="hover:text-[color:var(--brand-accent)] transition-colors" href="index.html">Home</a>
+          <a class="hover:text-[color:var(--brand-accent)] transition-colors" href="about.html">About</a>
+          <a class="hover:text-[color:var(--brand-accent)] transition-colors" href="contact.html">Contact</a>
         </div>
       </div>
     </footer>
